@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+
+body {
+    color: #111;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 700;
+}
+
+.container > span {
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 12px rgb(255, 27, 240), 0 0 50px rgb(255, 27, 240), 0 0 100px rgb(255, 27, 240);
+    }
+    10%, 90% {
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.container > span:nth-child(2),
+.container > span:nth-child(3),
+.container > span:nth-child(4),
+.container > span:nth-child(5),
+.container > span:nth-child(6),
+.container > span:nth-child(7),
+.container > span:nth-child(8),
+.container > span:nth-child(9),
+.container > span:nth-child(10),
+.container > span:nth-child(11),
+.container > span:nth-child(12) {
+    animation-delay: 0s; /* This should be a valid time value like '0s' or '1s' */
+}
